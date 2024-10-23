@@ -32,6 +32,9 @@ class Tarea(models.Model):
         ('Progreso', 'En progreso'),
         ('Completada', 'Completada'),
     ] 
+    
+    estado= models.CharField(max_length=50,choices=ESTADO)
+    
     Completada= models.BooleanField()
     Fecha_Creación= models.DateField()
     hora_Vencimiento= models.TimeField()

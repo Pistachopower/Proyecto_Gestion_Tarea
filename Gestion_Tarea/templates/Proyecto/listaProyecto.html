@@ -1,0 +1,30 @@
+<html>
+    <head>Principal</head>
+<body>
+{% comment %}
+
+
+{% endcomment %}
+
+<h1>Proyecto</h1>
+
+
+{% for proyecto in mostrar_Proyecto %}
+
+    <p>Nombre del proyecto: {{ proyecto.Nombre }}.</p>
+    <p>Descripcion {{ proyecto.Descripcion }}.</p>  
+    <p>Duracion_Estimada {{ proyecto.Duracion_Estimada }}.</p>  
+    <p>Fecha_Inicio {{ proyecto.Fecha_Inicio }}.</p>
+    <p>Fecha_Finalizacion {{ proyecto.Fecha_Finalizacion }}.</p>
+    <hr>
+
+    {% for usuario in proyecto.usuario.all %}
+    <p>Usuario {{ usuario.Nombre }}.</p>
+
+    {% endfor %}
+    
+{% endfor %}
+
+
+</body>
+</html>

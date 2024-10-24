@@ -1,0 +1,38 @@
+<html>
+    <head>Principal</head>
+<body>
+{% comment %}
+Completada= models.BooleanField()
+Fecha_Creación= models.DateField()
+hora_Vencimiento= models.TimeField()
+
+{% endcomment %}
+
+<h1> Tarea Proyecto</h1>
+
+    {% for tarea in tareas_Proyecto %}
+        <p>Tarea: {{ tarea.Titulo }}.</p>
+        <p>Descripcion: {{ tarea.Descripcion }}.</p>
+        <p>Prioridad: {{ tarea.Prioridad }}.</p>
+        <p>Estado: {{ tarea.get_ESTADO_display }}.</p>
+        <p>Completada: {{ tarea.Completada }}.</p>
+        <p>Fecha_Creación: {{ tarea.Fecha_Creación }}.</p>
+        <p>Hora_Vencimiento: {{ tarea.hora_Vencimiento }}.</p>
+
+
+        <ul>
+            {% for proyecto in tarea.Proyecto.all %}
+                 <p>Proyecto: {{ proyecto.Nombre }}.</p>
+            {% endfor%}
+        </ul>
+
+
+        
+
+
+        <hr>
+
+    {% endfor %}
+
+</body>
+</html>

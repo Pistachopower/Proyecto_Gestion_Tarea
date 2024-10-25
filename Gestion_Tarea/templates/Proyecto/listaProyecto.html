@@ -16,13 +16,12 @@
     <p>Duracion_Estimada {{ proyecto.Duracion_Estimada }}.</p>  
     <p>Fecha_Inicio {{ proyecto.Fecha_Inicio }}.</p>
     <p>Fecha_Finalizacion {{ proyecto.Fecha_Finalizacion }}.</p>
-    <hr>
-
-    {% for usuario in proyecto.usuario.all %}
-        <p>Usuario {{ usuario.Nombre }}.</p>
-
-    {% endfor %}
     
+    {% for usuario in proyecto.usuario.all %}
+        <p>Nombre usuario: {{ usuario.Nombre }}.</p>
+    {% endfor %}
+
+    <hr>
 {% endfor %}
 
 

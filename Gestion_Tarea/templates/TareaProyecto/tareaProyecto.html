@@ -11,14 +11,14 @@ hora_Vencimiento= models.TimeField()
 <h1> Tarea Proyecto</h1>
 
     {% for tarea in tareas_Proyecto %}
-        <p>Titulo de Tarea: {{ tarea.Titulo }}.</p>
-        <p>Descripcion: {{ tarea.Descripcion }}.</p>
-        <p>Prioridad: {{ tarea.Prioridad }}.</p>
+        <p>Titulo de Tarea: {{ tarea.titulo }}.</p>
+        <p>Descripcion: {{ tarea.descripcion }}.</p>
+        <p>Prioridad: {{ tarea.prioridad }}.</p>
         <p>Estado: {{ tarea.get_estado_display }}.</p>
-        <p>Completada: {{ tarea.Completada }}.</p>
-        <p>Fecha_Creación: {{ tarea.Fecha_Creación }}.</p>
+        <p>Completada: {{ tarea.completada }}.</p>
+        <p>Fecha_Creación: {{ tarea.fecha_Creacion }}.</p>
         <p>Hora_Vencimiento: {{ tarea.hora_Vencimiento }}.</p>
-        <p>Nombre proyecto: {{ tarea.proyecto.Nombre }}.</p>
+        <p>Nombre proyecto: {{ tarea.proyecto.nombre }}.</p>
         <hr>
 
     {% endfor %}

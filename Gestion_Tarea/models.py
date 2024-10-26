@@ -4,17 +4,17 @@ from django.utils import timezone
 
 
 class Usuario(models.Model):
-    Nombre = models.TextField()
-    CorreoElectronico = models.CharField(max_length=100, unique=True) #Texto y  único
-    Contrasena = models.TextField()
-    Fecha_Registro = models.DateTimeField(default=timezone.now)
+    nombre = models.TextField()
+    correoElectronico = models.CharField(max_length=100, unique=True) #Texto y  único
+    contrasena = models.TextField()
+    fecha_Registro = models.DateTimeField(default=timezone.now)
     
 class Proyecto(models.Model):
-    Nombre= models.CharField(max_length=100)
-    Descripcion= models.TextField()
-    Duracion_Estimada= models.FloatField()
-    Fecha_Inicio= models.DateField()
-    Fecha_Finalizacion= models.DateField()
+    nombre= models.CharField(max_length=100)
+    descripcion= models.TextField()
+    duracion_Estimada= models.FloatField()
+    fecha_Inicio= models.DateField()
+    fecha_Finalizacion= models.DateField()
     usuario= models.ManyToManyField(Usuario, through='Usuario_Proyecto')   
  
  #tabla intermedia usuario proyecto
@@ -24,9 +24,9 @@ class Usuario_Proyecto(models.Model):
     proyecto= models.ForeignKey(Proyecto, on_delete=models.CASCADE)    
 
 class Tarea(models.Model):
-    Titulo=  models.CharField(max_length=100)
-    Descripcion= models.TextField()
-    Prioridad= models.IntegerField()
+    titulo=  models.CharField(max_length=100)
+    descripcion= models.TextField()
+    prioridad= models.IntegerField()
     ESTADO= [#esto es una tupla con el primer parametro para la bd y el otro para el usuario
         ('Pendiente', 'Pendiente'),
         ('Progreso', 'En progreso'),
@@ -35,8 +35,8 @@ class Tarea(models.Model):
     
     estado= models.CharField(max_length=50,choices=ESTADO)
     
-    Completada= models.BooleanField()
-    Fecha_Creación= models.DateField()
+    completada= models.BooleanField()
+    fecha_Creacion= models.DateField()
     hora_Vencimiento= models.TimeField()
     #indicamos la tabla intermedia entre  usuario y tarea
     usuario= models.ManyToManyField(Usuario, through='Asignacion_Tarea')
@@ -47,6 +47,7 @@ class Tarea(models.Model):
 class Asignacion_Tarea(models.Model):
     usuario= models.ForeignKey(Usuario, on_delete=models.CASCADE)
     tarea= models.ForeignKey(Tarea, on_delete=models.CASCADE)
+    observaciones= models.TextField()
     
 class Etiqueta(models.Model):
     nombre= models.CharField(max_length=100, unique=True)
@@ -58,8 +59,8 @@ class Tarea_Etiqueta(models.Model):
     etiqueta= models.ForeignKey(Etiqueta,on_delete=models.CASCADE)
 
 class Comentario(models.Model):
-    Contenido= models.TextField()
-    Fecha_Comentario= models.DateTimeField(default=timezone.now) 
+    contenido= models.TextField()
+    fecha_Comentario= models.DateTimeField(default=timezone.now) 
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)   
   
 

@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-y7bpq0_+y^)y301k5)$2u*(5a7%_0yepxkvi5*m1rd+4ub^3db
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','0.0.0.0']
+INTERNAL_IPS = ["127.0.0.1"]
 
 
 # Application definition
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Gestion_Tarea',
     'django_seed',
+    #' debug_toolbar',
 
 ]
 
@@ -50,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #"debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -112,7 +115,7 @@ TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

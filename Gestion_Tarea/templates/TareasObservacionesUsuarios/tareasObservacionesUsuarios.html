@@ -8,11 +8,11 @@ hora_Vencimiento= models.TimeField()
 
 {% endcomment %}
 
-<h1> Usuario tarea</h1>
+<h1>tareas Observaciones Usuarios</h1>
 
-{% for asignacion in usuario_Tarea %}
-    <p>Nombre de usuario: {{ asignacion.usuario.nombre }}.</p>
-    <p>Fecha de creación: {{ asignacion.tarea.fecha_Creacion }}.</p>
+{% for ob in tareas_Observaciones_Usuarios %}
+    <p>Observaciones: {{ ob.observaciones}}.</p>
+   
     <hr>
 {% endfor %}
 

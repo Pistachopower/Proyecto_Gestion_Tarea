@@ -1,0 +1,14 @@
+<html>
+  <head></head>
+  <body>
+    {% comment %}Completada= models.BooleanField() Fecha_Creación= models.DateField() hora_Vencimiento= models.TimeField(){% endcomment %}
+
+    <h1>Tarea entre Dos Anios Completada</h1>
+  </body>
+
+  {% for t in tareas_Entre_DosAnios_Completada %}
+    
+    <p>Tarea completada entre dos años: {{ t.titulo }}</p>
+    <hr />
+  {% endfor %}
+</html>

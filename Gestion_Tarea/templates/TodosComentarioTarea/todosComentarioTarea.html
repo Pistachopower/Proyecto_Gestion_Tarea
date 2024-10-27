@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Todos Comentario Tarea</h1>
+
+    {% comment %} <h1>Comentarios que comienzan con "{{ palabra }}" y son del año {{ anio }}</h1>
+    <strong>{{ comentario.usuario.nombre }}:</strong> {{ comentario.contenido }} <br />
+
+    {% endcomment %}
+
+    <ul>
+      {% for comentario in comentarios_tarea_Palabra_Anio %}
+        <li>Contenido: {{ comentario.contenido }}</li>
+
+        <li>
+          Comentario: {{ comentario.usuario.nombre }}
+          <br />
+        </li>
+        <em>Fecha: {{ comentario.fecha_Comentario }}</em>
+
+      {% endfor %}
+    </ul>
+  </body>
+</html>

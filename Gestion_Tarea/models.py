@@ -61,7 +61,8 @@ class Tarea_Etiqueta(models.Model):
 class Comentario(models.Model):
     contenido= models.TextField()
     fecha_Comentario= models.DateTimeField(default=timezone.now) 
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)   
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE) 
+    asignacion_tarea = models.ForeignKey(Asignacion_Tarea, on_delete=models.CASCADE, null=True, blank=True)  
   
 
 

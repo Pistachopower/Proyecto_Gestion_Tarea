@@ -1,52 +1,8 @@
 <html>
-    <head>Principal</head>
-<body>
-{% comment %}
+  <head>Principal</head>
+  <body>
+    {% comment %}
 
-
-{% endcomment %}
-
-<h1>Gestion de tareas</h1>
-
-<ul>
-    <li><a href="{% url 'mostrar_Proyecto' %}">Proyectos</a></li>
-</ul>
-
-<ul>
-    {% comment %}url: llamas a la vista{% endcomment %}
-    <li><a href="{% url 'tareas_Proyecto' %}">Tareas con proyecto</a></li>
-</ul>
-
-<ul>
-    {% comment %}url: llamas a la vista{% endcomment %}
-    <li><a href="{% url 'usuario_Tarea' %}">Usuario con tarea</a></li>
-</ul>
-
-    
-<ul>
-    <li><a href="{% url 'tareas_Observaciones_Usuarios' 'There' %}">tareas_Observaciones_Usuarios</a></li>
-</ul>
-
-<ul>
-    <li><a href="{% url 'tareas_Entre_DosAnios_Completada' '2008' '2010' 'Completada' %}">Tarea completada entre dos años</a></li>
-</ul>
-
-<ul>
-    <li><a href="{% url 'ultimo_Usuario_Comentado_Tarea' %}">ultimo Usuario Comentado Tarea</a></li>
-</ul>
-
-<ul>
-    <li><a href="{% url 'comentarios_tarea_Palabra_Anio' 'Class' '2024'%}">Todos Comentario Tarea</a></li>
-</ul>
-
-<ul>
-    <li><a href="{% url 'etiquetas_Tareas_Proyecto' '2'%}">etiquetas_Tareas_Proyecto</a></li>
-</ul>
-
-<ul>
-    <li><a href="{% url 'usuarios_Sin_tarea' %}">Usuarios sin tarea</a></li>
-</ul>
- 
-
-</body>
+    {% endcomment %}
+  </body>
 </html>

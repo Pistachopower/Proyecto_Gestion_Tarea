@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="{% static  'imagenes/imagen.png' %}" alt="Imagen de Django"> 
+    
+  <h1>BIBLIOTECA ONLINE</h1>
+
+     <!-- Include: añade la plantilla menu  -->
+      {% include 'estructura/menu.html' %}
+
+      
+      {% block contenido %}
+      <!-- El contenido específico de cada página va aquí -->
+      {% endblock %}
+
+      <!-- Include: añade la plantilla footer  -->
+      {% include 'estructura/pie.html' %}
+</body>
+</html>

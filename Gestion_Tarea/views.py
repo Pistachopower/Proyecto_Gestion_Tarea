@@ -5,7 +5,7 @@ from django.views.defaults import page_not_found
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'estructura/principal.html')
 
 
 #Crea una URL que muestre una lista de todos los proyectos

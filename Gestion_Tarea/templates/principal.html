@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <img src="{% static  'imagenes/imagen.png' %}" alt="Imagen de Django"> 
-    
-  <h1>BIBLIOTECA ONLINE</h1>
+  {% load static %} <!--ESTA ETIQUETA SIEMPRE TIENE QUE CARGARSE-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pie.css' %}">
 
-     <!-- Include: añade la plantilla menu  -->
-      {% include 'estructura/menu.html' %}
+  </head>
+  <body>
+    <img src="{% static 'imagenes/logo_Biblioteca.webp' %}" alt="Imagen de Django" />
 
-      
-      {% block contenido %}
+
+    <!-- Include: añade la plantilla menu -->
+    {% include 'Estructura/menu.html' %}
+
+    {% block contenido %}
       <!-- El contenido específico de cada página va aquí -->
-      {% endblock %}
+      <p>contenidos</p>
+    {% endblock %}
 
-      <!-- Include: añade la plantilla footer  -->
-      {% include 'estructura/pie.html' %}
-</body>
+    <!-- Include: añade la plantilla del pie -->
+    {% include 'Estructura/pie.html' %}
+  </body>
 </html>

@@ -1,0 +1,1179 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add etiqueta",
+        "content_type": 7,
+        "codename": "add_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change etiqueta",
+        "content_type": 7,
+        "codename": "change_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete etiqueta",
+        "content_type": 7,
+        "codename": "delete_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view etiqueta",
+        "content_type": 7,
+        "codename": "view_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add proyecto",
+        "content_type": 8,
+        "codename": "add_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change proyecto",
+        "content_type": 8,
+        "codename": "change_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete proyecto",
+        "content_type": 8,
+        "codename": "delete_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view proyecto",
+        "content_type": 8,
+        "codename": "view_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add usuario",
+        "content_type": 9,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change usuario",
+        "content_type": 9,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete usuario",
+        "content_type": 9,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view usuario",
+        "content_type": 9,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add tarea",
+        "content_type": 10,
+        "codename": "add_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change tarea",
+        "content_type": 10,
+        "codename": "change_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete tarea",
+        "content_type": 10,
+        "codename": "delete_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view tarea",
+        "content_type": 10,
+        "codename": "view_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add asignacion_ tarea",
+        "content_type": 11,
+        "codename": "add_asignacion_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change asignacion_ tarea",
+        "content_type": 11,
+        "codename": "change_asignacion_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete asignacion_ tarea",
+        "content_type": 11,
+        "codename": "delete_asignacion_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view asignacion_ tarea",
+        "content_type": 11,
+        "codename": "view_asignacion_tarea"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add tarea_ etiqueta",
+        "content_type": 12,
+        "codename": "add_tarea_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change tarea_ etiqueta",
+        "content_type": 12,
+        "codename": "change_tarea_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete tarea_ etiqueta",
+        "content_type": 12,
+        "codename": "delete_tarea_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view tarea_ etiqueta",
+        "content_type": 12,
+        "codename": "view_tarea_etiqueta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add comentario",
+        "content_type": 13,
+        "codename": "add_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change comentario",
+        "content_type": 13,
+        "codename": "change_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete comentario",
+        "content_type": 13,
+        "codename": "delete_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view comentario",
+        "content_type": 13,
+        "codename": "view_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add usuario_ proyecto",
+        "content_type": 14,
+        "codename": "add_usuario_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change usuario_ proyecto",
+        "content_type": 14,
+        "codename": "change_usuario_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete usuario_ proyecto",
+        "content_type": 14,
+        "codename": "delete_usuario_proyecto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view usuario_ proyecto",
+        "content_type": 14,
+        "codename": "view_usuario_proyecto"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "etiqueta"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "proyecto"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "tarea"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "asignacion_tarea"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "tarea_etiqueta"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "comentario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "Gestion_Tarea",
+        "model": "usuario_proyecto"
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario",
+    "pk": 1,
+    "fields": {
+        "nombre": "To with right if age. Strong life successful guess big. Involve most see new you let people.",
+        "correoElectronico": "Fight ever activity event again expect. Actually soldier debate responsibility.",
+        "contrasena": "Hair start along difficult become concern better experience. Back positive long buy blue. General suffer phone have.\nFish suffer scene hair first.",
+        "fecha_Registro": "2024-11-15T20:10:18.808"
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario",
+    "pk": 2,
+    "fields": {
+        "nombre": "Choice power quickly within tree. Phone factor bill election toward.\nFinish glass activity tonight. No responsibility American reveal direction example news control.",
+        "correoElectronico": "Charge citizen goal man but board major.",
+        "contrasena": "Guy magazine line hand environment data. So huge score sing clearly station. Book three site bad this how for.\nYet give friend now her pick. Rule process indeed edge suddenly girl.",
+        "fecha_Registro": "2024-11-15T20:10:18.808"
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario",
+    "pk": 3,
+    "fields": {
+        "nombre": "Owner go stuff recently maybe. Forget then forward. Experience suggest boy way. Budget decade point more.",
+        "correoElectronico": "Fire strategy television surface whether civil operation. Now room fine brother.",
+        "contrasena": "Behavior peace machine test. Partner example group foreign today wear establish any. Various sing marriage education game.\nTruth where sound democratic water. Home yet discuss compare.",
+        "fecha_Registro": "2024-11-15T20:10:18.808"
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario",
+    "pk": 4,
+    "fields": {
+        "nombre": "Image read thing painting. Customer half allow city fund rich force different.\nInterview edge reveal early. Set prove natural than mission.",
+        "correoElectronico": "Machine more sense radio TV. Others account speak up explain system.",
+        "contrasena": "Peace face recently. Establish air find debate source beyond. Hundred catch region who agree people.",
+        "fecha_Registro": "2024-11-15T20:10:18.808"
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario",
+    "pk": 5,
+    "fields": {
+        "nombre": "Want capital he. Would baby prove total we. Dark practice anyone thought.\nTravel ask none reduce. Over water current note sound shoulder. Magazine fast quite challenge because parent.",
+        "correoElectronico": "Event expect most already tend thousand. Night few particularly everybody.",
+        "contrasena": "Boy interesting American should. Stock season myself offer law. Very high property statement design every catch. Others short century.",
+        "fecha_Registro": "2024-11-15T20:10:18.808"
+    }
+},
+{
+    "model": "Gestion_Tarea.proyecto",
+    "pk": 1,
+    "fields": {
+        "nombre": "Staff or including employee. Work hope inside or.",
+        "descripcion": "Draw board bar gas car husband. Low nature special benefit economy. Though light defense fire system wait business. Provide raise great production part choose.",
+        "duracion_Estimada": 0.2551489989485649,
+        "fecha_Inicio": "2018-01-13",
+        "fecha_Finalizacion": "2009-04-04"
+    }
+},
+{
+    "model": "Gestion_Tarea.proyecto",
+    "pk": 2,
+    "fields": {
+        "nombre": "Section carry side cut. Natural half capital fall. Letter power data appear ground once tell style.",
+        "descripcion": "Heart wind economy common professional visit. Air decision treat life too this.\nSingle red because full. Consumer street a position. Partner share ready.",
+        "duracion_Estimada": 0.4393457843517643,
+        "fecha_Inicio": "1973-04-02",
+        "fecha_Finalizacion": "1984-09-15"
+    }
+},
+{
+    "model": "Gestion_Tarea.proyecto",
+    "pk": 3,
+    "fields": {
+        "nombre": "Child change us song. On feel many ball beat. Blue toward past must person single blue.",
+        "descripcion": "Weight wrong on exactly. Common read those game.\nWhose beyond voice. Letter especially others firm difference group care. Against management fill power stand similar recent.",
+        "duracion_Estimada": 0.7599338640381339,
+        "fecha_Inicio": "2001-11-17",
+        "fecha_Finalizacion": "2014-10-31"
+    }
+},
+{
+    "model": "Gestion_Tarea.proyecto",
+    "pk": 4,
+    "fields": {
+        "nombre": "Pay little different mission anything available glass blood. Hot how activity total.",
+        "descripcion": "Above staff science arm any laugh. Point drive send woman. Professor decade dinner parent suddenly role sense fine.\nGive president sister wife option nature now office.",
+        "duracion_Estimada": 0.5744140876389582,
+        "fecha_Inicio": "2012-02-29",
+        "fecha_Finalizacion": "1978-06-02"
+    }
+},
+{
+    "model": "Gestion_Tarea.proyecto",
+    "pk": 5,
+    "fields": {
+        "nombre": "Floor politics improve.",
+        "descripcion": "Memory another weight action. Spend which simply ever modern Republican. Air different own threat its tonight American.",
+        "duracion_Estimada": 0.43869362189128724,
+        "fecha_Inicio": "1986-07-26",
+        "fecha_Finalizacion": "2013-10-15"
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 1,
+    "fields": {
+        "usuario": 5,
+        "proyecto": 1
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 2,
+    "fields": {
+        "usuario": 2,
+        "proyecto": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 3,
+    "fields": {
+        "usuario": 3,
+        "proyecto": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 4,
+    "fields": {
+        "usuario": 4,
+        "proyecto": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 5,
+    "fields": {
+        "usuario": 3,
+        "proyecto": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 6,
+    "fields": {
+        "usuario": 3,
+        "proyecto": 5
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 7,
+    "fields": {
+        "usuario": 4,
+        "proyecto": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 8,
+    "fields": {
+        "usuario": 3,
+        "proyecto": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 9,
+    "fields": {
+        "usuario": 3,
+        "proyecto": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 10,
+    "fields": {
+        "usuario": 4,
+        "proyecto": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.usuario_proyecto",
+    "pk": 11,
+    "fields": {
+        "usuario": 1,
+        "proyecto": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea",
+    "pk": 1,
+    "fields": {
+        "titulo": "War avoid feeling make majority ground. Necessary hospital stock.",
+        "descripcion": "Spend can particularly inside interview. Cause stock good region staff. Ok Republican machine growth upon.",
+        "prioridad": 22693,
+        "estado": "Completada",
+        "completada": false,
+        "fecha_Creacion": "2013-12-07",
+        "hora_Vencimiento": "07:14:58",
+        "proyecto": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea",
+    "pk": 2,
+    "fields": {
+        "titulo": "Sense section matter support campaign around your. President side site leader again.",
+        "descripcion": "Imagine raise mind room. Responsibility single turn then. Wonder century office guy.\nCamera fish loss play resource difference. Pattern two my interest word.",
+        "prioridad": 7507,
+        "estado": "Progreso",
+        "completada": false,
+        "fecha_Creacion": "2011-05-07",
+        "hora_Vencimiento": "21:36:27",
+        "proyecto": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea",
+    "pk": 3,
+    "fields": {
+        "titulo": "Church standard sort pressure sort dark official. Later young save affect parent and common need.",
+        "descripcion": "Vote teacher of. Door task high he news director order himself.\nThen sing game opportunity sell wind too. Information practice cover out both list him mean.",
+        "prioridad": 14199,
+        "estado": "Completada",
+        "completada": false,
+        "fecha_Creacion": "1998-02-16",
+        "hora_Vencimiento": "21:09:42",
+        "proyecto": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea",
+    "pk": 4,
+    "fields": {
+        "titulo": "Strong little which blood because. Reach toward article already friend meeting respond.",
+        "descripcion": "Share front down Mrs evidence church they. Agreement natural president many.\nIndicate response ok help. Product free region nothing. Interesting argue including effect himself.",
+        "prioridad": 7599,
+        "estado": "Pendiente",
+        "completada": true,
+        "fecha_Creacion": "2009-08-16",
+        "hora_Vencimiento": "05:11:30",
+        "proyecto": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea",
+    "pk": 5,
+    "fields": {
+        "titulo": "Personal tonight above than add. Reach police pick. Yourself government not draw performance.",
+        "descripcion": "Idea cell since number any. Road put specific example. Hard either skin.\nBall off should technology able evening class. Left yes fly deal. You worker tax thank accept agent senior model.",
+        "prioridad": -11554,
+        "estado": "Progreso",
+        "completada": true,
+        "fecha_Creacion": "1979-11-19",
+        "hora_Vencimiento": "07:43:53",
+        "proyecto": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 1,
+    "fields": {
+        "usuario": 1,
+        "tarea": 1,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 2,
+    "fields": {
+        "usuario": 5,
+        "tarea": 2,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 3,
+    "fields": {
+        "usuario": 2,
+        "tarea": 2,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 4,
+    "fields": {
+        "usuario": 2,
+        "tarea": 3,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 5,
+    "fields": {
+        "usuario": 3,
+        "tarea": 4,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 6,
+    "fields": {
+        "usuario": 1,
+        "tarea": 4,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 7,
+    "fields": {
+        "usuario": 2,
+        "tarea": 5,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 8,
+    "fields": {
+        "usuario": 3,
+        "tarea": 5,
+        "observaciones": ""
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 9,
+    "fields": {
+        "usuario": 3,
+        "tarea": 2,
+        "observaciones": "Role dog occur today recent once believe. Blue lot possible claim develop particularly. Safe sport quite support own nearly."
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 10,
+    "fields": {
+        "usuario": 2,
+        "tarea": 2,
+        "observaciones": "Marriage law area yes alone. Sign boy imagine benefit life hospital they."
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 11,
+    "fields": {
+        "usuario": 1,
+        "tarea": 3,
+        "observaciones": "Leg south you assume your into during. Sing health technology which decision tree same. Not tell material well anyone center matter teacher.\nBit couple paper back job score. Nice show magazine smile."
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 12,
+    "fields": {
+        "usuario": 3,
+        "tarea": 4,
+        "observaciones": "Place unit check actually environment expect. Room in cup soldier necessary. Fine order appear save possible none to."
+    }
+},
+{
+    "model": "Gestion_Tarea.asignacion_tarea",
+    "pk": 13,
+    "fields": {
+        "usuario": 4,
+        "tarea": 5,
+        "observaciones": "Finally chair meeting arrive since however. Music responsibility scene Congress field positive.\nTonight college consider suggest lose. Prepare husband the reveal high recognize region."
+    }
+},
+{
+    "model": "Gestion_Tarea.etiqueta",
+    "pk": 1,
+    "fields": {
+        "nombre": "Hit but price campaign simply age."
+    }
+},
+{
+    "model": "Gestion_Tarea.etiqueta",
+    "pk": 2,
+    "fields": {
+        "nombre": "May turn hold mention. Know challenge special it."
+    }
+},
+{
+    "model": "Gestion_Tarea.etiqueta",
+    "pk": 3,
+    "fields": {
+        "nombre": "Indeed treat baby land quite. Remember film likely life trouble less ability."
+    }
+},
+{
+    "model": "Gestion_Tarea.etiqueta",
+    "pk": 4,
+    "fields": {
+        "nombre": "Bar end realize me. Set break debate magazine cover late. Free determine fly road author."
+    }
+},
+{
+    "model": "Gestion_Tarea.etiqueta",
+    "pk": 5,
+    "fields": {
+        "nombre": "Increase total moment cause benefit. Much some forward. Year away politics decade sell into seat."
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 1,
+    "fields": {
+        "tarea": 3,
+        "etiqueta": 1
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 2,
+    "fields": {
+        "tarea": 2,
+        "etiqueta": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 3,
+    "fields": {
+        "tarea": 4,
+        "etiqueta": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 4,
+    "fields": {
+        "tarea": 5,
+        "etiqueta": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 5,
+    "fields": {
+        "tarea": 1,
+        "etiqueta": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 6,
+    "fields": {
+        "tarea": 3,
+        "etiqueta": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 7,
+    "fields": {
+        "tarea": 5,
+        "etiqueta": 5
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 8,
+    "fields": {
+        "tarea": 4,
+        "etiqueta": 2
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 9,
+    "fields": {
+        "tarea": 3,
+        "etiqueta": 1
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 10,
+    "fields": {
+        "tarea": 3,
+        "etiqueta": 3
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 11,
+    "fields": {
+        "tarea": 3,
+        "etiqueta": 5
+    }
+},
+{
+    "model": "Gestion_Tarea.tarea_etiqueta",
+    "pk": 12,
+    "fields": {
+        "tarea": 3,
+        "etiqueta": 4
+    }
+},
+{
+    "model": "Gestion_Tarea.comentario",
+    "pk": 1,
+    "fields": {
+        "contenido": "Traditional evidence fear anyone by. Sport stay others box become.\nUpon safe participant later. Determine increase sport necessary. Such sport song but all natural yeah.\nDog seek write ok current.",
+        "fecha_Comentario": "2024-11-15T20:10:18.808",
+        "usuario": 1,
+        "asignacion_tarea": null
+    }
+},
+{
+    "model": "Gestion_Tarea.comentario",
+    "pk": 2,
+    "fields": {
+        "contenido": "Listen why chance court bring off. Carry final apply than have hear fear budget. Would say open choice many. Very fight standard lot interview score hot manager.",
+        "fecha_Comentario": "2024-11-15T20:10:18.808",
+        "usuario": 4,
+        "asignacion_tarea": null
+    }
+},
+{
+    "model": "Gestion_Tarea.comentario",
+    "pk": 3,
+    "fields": {
+        "contenido": "Perform any newspaper expert must. Rich pick doctor create major miss citizen.\nSchool rather majority there rest market.",
+        "fecha_Comentario": "2024-11-15T20:10:18.808",
+        "usuario": 4,
+        "asignacion_tarea": null
+    }
+},
+{
+    "model": "Gestion_Tarea.comentario",
+    "pk": 4,
+    "fields": {
+        "contenido": "Democrat product sign no.\nKnowledge discussion huge trip great service. Affect ground road agree first agent item. Score drive enough newspaper thousand yet.",
+        "fecha_Comentario": "2024-11-15T20:10:18.808",
+        "usuario": 1,
+        "asignacion_tarea": null
+    }
+},
+{
+    "model": "Gestion_Tarea.comentario",
+    "pk": 5,
+    "fields": {
+        "contenido": "Everybody future although college. Hair seem probably player entire high.\nReason game place force real left. Speech garden network argue. Perhaps security grow work feel little.",
+        "fecha_Comentario": "2024-11-15T20:10:18.808",
+        "usuario": 4,
+        "asignacion_tarea": null
+    }
+}
+]

@@ -1,8 +1,20 @@
-<html>
-  <head>Principal</head>
-  <body>
-    {% comment %}
 
-    {% endcomment %}
-  </body>
-</html>
+{% extends "principal.html" %} <!--hereda de principal.html-->
+
+{% load static %} <!--carga los archivos estaticos-->
+{% block link_css %}
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+{% endblock %}
+
+
+
+{% block contenido %}
+
+    <h2>Contenido</h2>
+    <ul>
+        <li><a href="{% url 'mostrar_Proyecto' %}">muestre una lista de todos los proyectos</a></li>
+        <li><a href="{% url 'tareas_Proyecto' %}">muestre todas las tareas que están asociadas a un
+          proyecto, ordenadas por fecha de creación descendente</a></li>
+    </ul>
+
+{% endblock %}

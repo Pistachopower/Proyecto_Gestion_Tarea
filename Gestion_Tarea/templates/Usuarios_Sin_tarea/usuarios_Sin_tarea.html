@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>usuarios_Sin_tarea</title>
-</head>
-<body>
-    <h1>usuarios_Sin_tarea</h1>
-    
+{% extends 'principal.html' %} <!-- hereda de principal.html -->
 
-    {% for u in usuarios_Sin_tarea %}
-    <p>Nombre usuario sin tarea: {{ u.nombre }}.</p>
-     {% endfor %}
-</body>
-</html>
+{% block contenido %}
+  <h1>usuarios_Sin_tarea</h1>
+  
+  {% for u in usuarios_Sin_tarea %}
+  {% include 'Usuarios_Sin_tarea/_Contenido_usuarios_Sin_tarea.html' %}
+  {% empty %}
+    <li>no hay informacion.</li>
+  {% endfor %}
+{% endblock %}

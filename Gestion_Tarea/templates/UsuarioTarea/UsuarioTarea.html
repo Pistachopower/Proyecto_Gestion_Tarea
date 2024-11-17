@@ -1,22 +1,15 @@
-<html>
-    <head></head>
-<body>
-{% comment %}
-Completada= models.BooleanField()
-Fecha_Creación= models.DateField()
-hora_Vencimiento= models.TimeField()
+{% extends 'principal.html' %} <!-- hereda de principal.html -->
 
-{% endcomment %}
+{% comment %}Completada= models.BooleanField() Fecha_Creación= models.DateField() hora_Vencimiento= models.TimeField(){% endcomment %}
 
-<h1> Usuario tarea</h1>
+
+{% block contenido %}
+<h1>Usuario tarea</h1>
 
 {% for asignacion in usuario_Tarea %}
-    <p>Nombre de usuario: {{ asignacion.usuario.nombre }}.</p>
-    <p>Fecha de creación: {{ asignacion.tarea.fecha_Creacion }}.</p>
-    <hr>
+{% include 'UsuarioTarea/_Contenido_UsuarioTarea.html' with proyecto=proyecto%}
 {% endfor %}
+{% endblock %}
 
-   
 
-</body>
-</html>
+

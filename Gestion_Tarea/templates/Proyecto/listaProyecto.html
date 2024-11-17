@@ -1,30 +1,15 @@
-<html>
-    <head>Principal</head>
-    {% extends "principal.html" %} <!--hereda de principal.html-->
-<body>
-{% comment %}
+{% extends 'principal.html' %} <!-- hereda de principal.html -->
 
+{% block contenido %}
+  <h1>Proyecto</h1>
 
-{% endcomment %}
+  {% for proyecto in mostrar_Proyecto %}
+    <!--
+    _proyecto.html: creamos este html comenzando con _ para indicar 
+    que el archivo está diseñado para ser parcial o inclusión en otros archivos
 
-<h1>Proyecto</h1>
-
-
-{% for proyecto in mostrar_Proyecto %}
-
-    <p>Nombre del proyecto: {{ proyecto.nombre }}.</p>
-    <p>Descripcion {{ proyecto.descripcion }}.</p>  
-    <p>Duracion_Estimada {{ proyecto.duracion_Estimada }}.</p>  
-    <p>Fecha_Inicio {{ proyecto.fecha_Inicio }}.</p>
-    <p>Fecha_Finalizacion {{ proyecto.fecha_Finalizacion }}.</p>
-    
-    {% for usuario in proyecto.usuario.all %}
-        <p>Nombre usuario: {{ usuario.nombre }}.</p>
-    {% endfor %}
-
-    <hr>
-{% endfor %}
-
-
-</body>
-</html>
+    with proyecto= proyecto: pasa la variable proyecto de esta plantilla al archivo _proyecto.html, para que lo puedas usar allí".
+    -->
+    {% include 'Proyecto/_proyecto.html'%}
+  {% endfor %}
+{% endblock %}

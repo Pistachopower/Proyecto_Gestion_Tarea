@@ -1,22 +1,11 @@
-<html>
-    <head></head>
-<body>
-{% comment %}
-Completada= models.BooleanField()
-Fecha_Creación= models.DateField()
-hora_Vencimiento= models.TimeField()
+{% extends 'principal.html' %} <!-- hereda de principal.html -->
 
-{% endcomment %}
+{% comment %}Completada= models.BooleanField() Fecha_Creación= models.DateField() hora_Vencimiento= models.TimeField(){% endcomment %}
 
-<h1>tareas Observaciones Usuarios</h1>
+{% block contenido %}
+  <h1>tareas Observaciones Usuarios</h1>
 
-{% for ob in tareas_Observaciones_Usuarios %}
-    <p>Observaciones: {{ ob.observaciones}}.</p>
-   
-    <hr>
-{% endfor %}
-
-   
-
-</body>
-</html>
+  {% for ob in tareas_Observaciones_Usuarios %}
+  {% include 'TareasObservacionesUsuarios/_Contenido_tareasObservacionesUsuarios.html'%}
+  {% endfor %}
+{% endblock %}

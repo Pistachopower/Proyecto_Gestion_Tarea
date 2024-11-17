@@ -1,6 +1,6 @@
-<html>
-    <head>Principal</head>
-<body>
+
+    {% extends "principal.html" %} <!--hereda de principal.html-->
+
 {% comment %}
 Completada= models.BooleanField()
 Fecha_Creación= models.DateField()
@@ -8,20 +8,14 @@ hora_Vencimiento= models.TimeField()
 
 {% endcomment %}
 
+{% block contenido %}
 <h1> Tarea Proyecto</h1>
 
     {% for tarea in tareas_Proyecto %}
-        <p>Titulo de Tarea: {{ tarea.titulo }}.</p>
-        <p>Descripcion: {{ tarea.descripcion }}.</p>
-        <p>Prioridad: {{ tarea.prioridad }}.</p>
-        <p>Estado: {{ tarea.get_estado_display }}.</p>
-        <p>Completada: {{ tarea.completada }}.</p>
-        <p>Fecha_Creación: {{ tarea.fecha_Creacion }}.</p>
-        <p>Hora_Vencimiento: {{ tarea.hora_Vencimiento }}.</p>
-        <p>Nombre proyecto: {{ tarea.proyecto.nombre }}.</p>
-        <hr>
+    {% include 'TareaProyecto/_Contenido_tareaProyecto.html' %}
 
     {% endfor %}
+{% endblock %}
 
-</body>
-</html>
+
+

@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-{% extends "principal.html" %} <!--hereda de principal.html-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>etiquetas_Tareas_Proyecto</title>
-  </head>
-  <body>
-    <ul>
-      <h1>Etiquetas_Tareas_Proyecto</h1>
-      {% for etiqueta in etiquetas_Tareas_Proyecto %}
-        <p>Nombre etiqueta: {{ etiqueta.nombre }}</p>
-        <p>Id etiqueta: {{ etiqueta.id }}</p>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% extends 'principal.html' %} <!-- hereda de principal.html -->
+
+{% block contenido %}
+  <ul>
+    <h1>Etiquetas_Tareas_Proyecto</h1>
+    {% for etiqueta in etiquetas_Tareas_Proyecto %}
+    {% include 'Etiquetas_Tareas_Proyecto/_Contenido_EtiquetasTareasProyecto.html' %}
+    {% endfor %}
+  </ul>
+{% endblock %}

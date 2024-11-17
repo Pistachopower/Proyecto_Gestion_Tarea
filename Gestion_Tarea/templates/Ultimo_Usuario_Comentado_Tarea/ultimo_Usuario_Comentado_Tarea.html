@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h2>Último usuario comentado tarea</h2>
+{% extends 'principal.html' %} <!-- hereda de principal.html -->
 
-    {% for com in ultimo_Usuario_Comentado_Tarea %}
-      <p>Fecha de comentario: {{ com.fecha_Comentario }}.</p>
-      <p>Usuario: {{ com.usuario.nombre}}.</p>
+{% block contenido %}
+<h2>Último usuario comentado tarea</h2>
+
+{% for com in ultimo_Usuario_Comentado_Tarea %}
+{% include 'Ultimo_Usuario_Comentado_Tarea/_Contenido_ultimo_Usuario_Comentado_Tarea.html'%}
+{% endfor %}
+{% endblock %}
 
 
 
-      <hr/>
-    {% endfor %}
-  </body>
-</html>
+

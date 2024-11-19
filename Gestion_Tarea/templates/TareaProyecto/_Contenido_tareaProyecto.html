@@ -1,9 +1,12 @@
-<p>Titulo de Tarea: {{ tarea.titulo }}.</p>
-<p>Descripcion: {{ tarea.descripcion }}.</p>
-<p>Prioridad: {{ tarea.prioridad }}.</p>
-<p>Estado: {{ tarea.get_estado_display }}.</p>
-<p>Completada: {{ tarea.completada }}.</p>
-<p>Fecha_Creación: {{ tarea.fecha_Creacion }}.</p>
-<p>Hora_Vencimiento: {{ tarea.hora_Vencimiento }}.</p>
-<p>Nombre proyecto: {{ tarea.proyecto.nombre }}.</p>
-<hr>
+
+{% if tarea.estado == 'Completada' %}
+  <p>Nombre de la tarea: {{ tarea.titulo }}</p>
+  <p>Descripción: {{ tarea.descripcion }}</p>
+  <p>Fecha de creación: {{ tarea.fecha_Creacion }}</p>
+  <p>Fecha de vencimiento: {{ tarea.hora_Vencimiento }}</p>
+  <hr />
+{% else %}
+  <p>Esta tarea aún no ha sido completada: {{ tarea.titulo }}</p>
+
+  <hr>
+{% endif %}

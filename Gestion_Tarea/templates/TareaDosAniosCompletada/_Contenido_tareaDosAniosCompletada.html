@@ -1,2 +1,9 @@
-<p>Tarea completada entre dos años: {{ t.titulo }}</p>
-<hr />
+{% if t.proyecto_id == 4 %}
+  <p>Tarea completada entre dos años: {{ t.titulo }}</p>
+  <p>Id proyecto: {{ t.proyecto_id }}</p>
+  <hr />
+{% else %}
+  <p>Id proyecto: {{ t.proyecto_id }}</p>
+  <p>Esta tarea no está marcada como completada.</p>
+  <hr />
+{% endif %}

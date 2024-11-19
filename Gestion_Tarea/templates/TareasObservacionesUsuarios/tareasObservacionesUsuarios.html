@@ -7,5 +7,8 @@
 
   {% for ob in tareas_Observaciones_Usuarios %}
   {% include 'TareasObservacionesUsuarios/_Contenido_tareasObservacionesUsuarios.html'%}
+
+  {% empty %}
+    <li>No hay proyectos disponibles en este momento.</li>
   {% endfor %}
 {% endblock %}

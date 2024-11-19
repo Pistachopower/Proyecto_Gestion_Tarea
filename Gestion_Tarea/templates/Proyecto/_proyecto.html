@@ -1,11 +1,28 @@
+<!-- 
 <p>Nombre del proyecto: {{ proyecto.nombre }}.</p>
 <p>Descripcion {{ proyecto.descripcion }}.</p>  
 <p>Duracion_Estimada {{ proyecto.duracion_Estimada }}.</p>  
 <p>Fecha_Inicio {{ proyecto.fecha_Inicio }}.</p>
 <p>Fecha_Finalizacion {{ proyecto.fecha_Finalizacion }}.</p>
 
+ -->
+
+{% if proyecto.nombre|length == 5 %}
+  <!-- |length se usa para tomar la longitud del atributo -->
+  <p>Nombre del proyecto: {{ proyecto.nombre }}</p>
+  <p>Descripción: {{ proyecto.descripcion }}</p>
+  <p>Duración Estimada: {{ proyecto.duracion_Estimada }}</p>
+  <p>Fecha de Inicio: {{ proyecto.fecha_Inicio }}</p>
+  <p>Fecha de Finalización: {{ proyecto.fecha_Finalizacion }}</p>
+  <hr>
+{% else %}
+  <p>Este proyecto no cumple con la longitud de nombre requerida: {{ proyecto.nombre }}</p>
+  <hr>
+
+{% endif %}
+
 {% for usuario in proyecto.usuario.all %}
-    <p>Nombre usuario: {{ usuario.nombre }}.</p>
+  <p>Nombre usuario: {{ usuario.nombre }}.</p>
 {% endfor %}
 
-<hr>
+<hr />

@@ -1,0 +1,15 @@
+
+<!--si comentario.usuario.nombre tiene texto o comentario.fecha_Comentario.year
+es menor o igual a 2024 muestra contenido. Usamos .year para obtener solo 
+el año en la comparacion y la propiedad year se puede utilizar 
+porque el tipo de dato es models.DateTimeField(default=timezone.now) 
+-->
+{% if comentario.usuario.nombre or comentario.fecha_Comentario.year <= 2024%}
+  <li>Comentario: {{ comentario.usuario.nombre }}</li>
+  <li>Contenido: {{ comentario.contenido }}</li>
+  <em>Fecha: {{ comentario.fecha_Comentario }}</em>
+  <br />
+{% else %}
+  <p>El contenido está vacío.</p>
+{% endif %}
+

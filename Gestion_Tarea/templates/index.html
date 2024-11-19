@@ -10,13 +10,9 @@
 
 {% block contenido %}
 
-    <h2>Contenido</h2>
-    <ul>
         {% comment %}
-                <li><a href="{% url 'mostrar_Proyecto' %}">muestre una lista de todos los proyectos</a></li>
-        <li><a href="{% url 'tareas_Proyecto' %}">muestre todas las tareas que están asociadas a un
-          proyecto, ordenadas por fecha de creación descendente</a></li>
-        {% endcomment %}
+      <ul>
+
 
         <li>
           <a href="{% url 'mostrar_Proyecto' %}">Mostrar todos los proyectos</a>
@@ -55,5 +51,11 @@
           </li>
 
     </ul>
+
+
+        {% endcomment %}
+
+    <h2>Contenido</h2>
+
 
 {% endblock %}

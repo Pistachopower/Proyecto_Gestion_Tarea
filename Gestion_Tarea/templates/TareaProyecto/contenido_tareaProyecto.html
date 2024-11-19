@@ -1,5 +1,5 @@
 
-{% if tarea.estado == 'Completada' %}
+{% if tarea.estado == 'Completada' and tarea.prioridad <= 22693 %}
   <p>Nombre de la tarea: {{ tarea.titulo }}</p>
   <p>Descripción: {{ tarea.descripcion }}</p>
   <p>Fecha de creación: {{ tarea.fecha_Creacion }}</p>

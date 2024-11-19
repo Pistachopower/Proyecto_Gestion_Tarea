@@ -1,13 +1,9 @@
 {% extends 'principal.html' %} <!-- hereda de principal.html -->
 
 {% block contenido %}
-<h2>Último usuario comentado tarea</h2>
+  <h2>Último usuario comentado tarea</h2>
 
-{% for com in ultimo_Usuario_Comentado_Tarea %}
-{% include 'Ultimo_Usuario_Comentado_Tarea/_Contenido_ultimo_Usuario_Comentado_Tarea.html'%}
-{% endfor %}
+  {% for com in ultimo_Usuario_Comentado_Tarea %}
+    {% include 'Ultimo_Usuario_Comentado_Tarea/contenido_ultimo_Usuario_Comentado_Tarea.html' %}
+  {% endfor %}
 {% endblock %}
-
-
-
-

@@ -1,7 +1,11 @@
-{% if t.proyecto_id == 4 %}
+
+<!--queremos que cuando id proyecto sea diferente de 4 muestre los contenidos-->
+{% if t.proyecto_id != 4 %}
   <p>Tarea completada entre dos años: {{ t.titulo }}</p>
   <p>Id proyecto: {{ t.proyecto_id }}</p>
   <hr />
+
+<!--mostramos el id 4 -->
 {% else %}
   <p>Id proyecto: {{ t.proyecto_id }}</p>
   <p>Esta tarea no está marcada como completada.</p>

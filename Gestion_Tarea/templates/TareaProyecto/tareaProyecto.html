@@ -12,7 +12,7 @@ hora_Vencimiento= models.TimeField()
 <h1> Tarea Proyecto</h1>
 
     {% for tarea in tareas_Proyecto %}
-    {% include 'TareaProyecto/_Contenido_tareaProyecto.html' %}
+    {% include 'TareaProyecto/contenido_tareaProyecto.html' %}
 
     {% empty %}
          <li>No hay proyectos disponibles en este momento.</li>

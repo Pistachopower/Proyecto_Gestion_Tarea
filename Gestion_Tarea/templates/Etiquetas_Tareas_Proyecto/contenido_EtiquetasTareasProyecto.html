@@ -1,0 +1,16 @@
+<!--      
+<p>Nombre etiqueta: {{ etiqueta.nombre }}</p>
+<p>Id etiqueta: {{ etiqueta.id }}</p>
+      -->
+
+{% if etiqueta.completada == true %}
+  <!-- usamos el template filter para poner el nombre en mayusculas -->
+
+  {% filter upper %}
+    <p>Nombre de la tarea: {{ etiqueta.nombre }}</p>
+  {% endfilter %}
+
+  <hr />
+{% else %}
+  <p>La tarea: {{ etiqueta.nombre }} no está marcada como completada</p>
+{% endif %}

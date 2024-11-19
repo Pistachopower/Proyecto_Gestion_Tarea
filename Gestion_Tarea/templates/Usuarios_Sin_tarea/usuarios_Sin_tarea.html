@@ -2,10 +2,10 @@
 
 {% block contenido %}
   <h1>usuarios_Sin_tarea</h1>
-  
+
   {% for u in usuarios_Sin_tarea %}
-  {% include 'Usuarios_Sin_tarea/_Contenido_usuarios_Sin_tarea.html' %}
+    {% include 'Usuarios_Sin_tarea/contenido_usuarios_Sin_tarea.html' %}
   {% empty %}
-    <li>no hay informacion.</li>
+    <li>no hay usuario sin tarea.</li>
   {% endfor %}
 {% endblock %}

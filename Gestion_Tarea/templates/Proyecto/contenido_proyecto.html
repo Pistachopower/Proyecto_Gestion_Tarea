@@ -8,16 +8,19 @@
   -->
 
 <!-- proyecto.nombre|length: obtenemos la longitud del registro nombre -->
-{% if proyecto.nombre|length < 15 %}
+{% if proyecto.nombre|length < 50 %}
   <!-- |length se usa para tomar la longitud del atributo -->
-  <p>Nombre del proyecto: {{ proyecto.nombre }}</p>
+  <p>Nombre del proyecto: {{ proyecto.nombre|slice:":5" }}</p>
+  <p>Longitud de nombre del proyecto: {{ proyecto.nombre|length }}</p>
   <p>Descripción: {{ proyecto.descripcion }}</p>
-  <p>Duración Estimada: {{ proyecto.duracion_Estimada }}</p>
+  <p>Duración Estimada: {{ proyecto.duracion_Estimada|floatformat:3 }}</p>
+  <p>Duración Estimada con incremento a 1: {{ proyecto.duracion_Estimada|add:"1" }}</p>
   <p>Fecha de Inicio: {{ proyecto.fecha_Inicio }}</p>
-  <p>Fecha de Finalización: {{ proyecto.fecha_Finalizacion }}</p>
+  <p>Fecha de Finalización: {{ proyecto.fecha_Finalizacion|date:"d-m-Y" }}</p>
+
 
 {% else %}
-  <p>Este proyecto no cumple con la longitud de nombre requerida: {{ proyecto.nombre }}</p>
+  <p>Este proyecto no cumple con la longitud de nombre requerida: {{ proyecto.nombre|upper }}</p>
   <hr />
 {% endif %}
 

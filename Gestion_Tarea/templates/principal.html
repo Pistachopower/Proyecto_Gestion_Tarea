@@ -16,6 +16,10 @@
     <!-- Include: añade la plantilla menu -->
     {% include 'Estructura/menu.html' %}
 
+    {% block cabecera %}
+    <h1>Bienvenido al Gestor de Tareas</h1>
+    {% endblock %}
+
     {% block contenido %}
       <!-- El contenido específico de cada página va aquí -->
       

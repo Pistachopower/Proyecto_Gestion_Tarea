@@ -1,7 +1,10 @@
 
+<p>Cantidad de iteraciones de todas las tareas: {{ forloop.counter }}</p>
+
 <!--queremos que cuando id proyecto sea diferente de 4 muestre los contenidos-->
 {% if t.proyecto_id != 4 %}
-  <p>Tarea completada entre dos años: {{ t.titulo }}</p>
+  <p>Tarea completada entre dos años: {{ t.titulo|capfirst  }}</p>
+  <p>Tarea completada: {{ t.completada|yesno:"Sí,No"  }}</p>
   <p>Id proyecto: {{ t.proyecto_id }}</p>
   <hr />
 
